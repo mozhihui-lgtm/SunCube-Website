@@ -1,0 +1,8 @@
+.DS_Store
+**/.DS_Store
+~$*
+
+# Source presentations and documents are stored separately from the website repository.
+Introduction/*.pptx
+Introduction/*.pdf
+

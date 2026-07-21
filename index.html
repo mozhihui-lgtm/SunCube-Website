@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SunCube transforms agricultural shading into productive energy and climate infrastructure through integrated solar, climate, and crop optimization.">
+  <title>SunCube Systems | Intelligent Agrivoltaic Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-concept {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .hero-visual > :not(.hero-concept) { display: none; }
+    @media (min-width: 901px) {
+      .hero {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        min-height: 100vh;
+        padding: 130px 4vw 34px;
+        isolation: isolate;
+      }
+      .hero-visual {
+        position: absolute;
+        inset: 105px 4vw 88px;
+        min-height: 0;
+        margin: 0;
+        z-index: -1;
+      }
+      .hero-visual::after { display: none; }
+      .hero-copy {
+        width: min(44vw, 680px);
+        max-width: none;
+        align-self: center;
+        padding: 50px 0 66px;
+        z-index: 2;
+      }
+      .hero h1 { font-size: clamp(58px, 5vw, 84px); }
+      .hero-intro { max-width: 610px; }
+      .hero-concept {
+        object-fit: contain;
+        transform: scale(.88);
+        transform-origin: 82% center;
+      }
+      .farm-system { width: 49%; left: 48%; bottom: 7%; }
+      .sun-orbit { right: -2%; top: -24%; }
+      .system-label { z-index: 2; }
+      .label-energy { left: 51%; top: 25%; }
+      .label-data { right: 3%; top: 43%; }
+      .label-crop { right: 3%; bottom: 9%; }
+      .metric-card { z-index: 3; right: 4%; top: 22%; }
+      .hero-footer {
+        position: relative;
+        z-index: 4;
+        background: rgba(245,245,237,.86);
+        backdrop-filter: blur(8px);
+        padding: 18px 16px 0;
+      }
+    }
+    @media (max-width: 900px) {
+      .hero-concept { object-position: 68% center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SunCube home">
+      <img src="Logo/LOGO-png3.png" alt="SunCube Systems">
+    </a>
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Main navigation">
+      <a href="#why">Why SunCube</a><a href="#solutions">Solutions</a><a href="#technology">Technology</a><a href="#projects">Projects</a><a href="#contact">Start a conversation <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Intelligent agrivoltaic systems</p>
+        <h1>Turn farm shade into <em>food, energy</em> and value.</h1>
+        <p class="hero-intro">SunCube designs and integrates agrivoltaic systems around the needs of each crop, local climate, and farm—turning passive shade into productive infrastructure.</p>
+        <div class="hero-actions">
+          <a class="button" href="#solutions">Explore our systems <span>↗</span></a>
+          <a class="text-link" href="#contact">Discuss a project <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <img class="hero-concept" src="assets/images/suncube-original-concept.png" alt="SunCube smart agrivoltaic greenhouse concept with solar panels, crop beds, irrigation, sensors, cloud connectivity, and mobile monitoring">
+        <div class="sun-orbit"><div class="sun"></div></div>
+        <div class="system-label label-energy">01 / ENERGY</div>
+        <div class="system-label label-crop">02 / CROP</div>
+        <div class="system-label label-data">03 / INTELLIGENCE</div>
+        <div class="farm-system">
+          <div class="panel-row">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="beam beam-one"></div>
+          <div class="beam beam-two"></div>
+          <div class="frame frame-left"></div>
+          <div class="frame frame-right"></div>
+          <div class="crop-row">
+            <span>♣</span><span>♣</span><span>♣</span><span>♣</span><span>♣</span>
+          </div>
+          <div class="ground"></div>
+        </div>
+        <div class="metric-card">
+          <span>System objective</span>
+          <strong>Balanced performance</strong>
+          <div class="bars"><i></i><i></i><i></i></div>
+          <small>Energy&nbsp;&nbsp;&nbsp; Crop&nbsp;&nbsp;&nbsp; Climate</small>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <span>Design</span><b>→</b><span>Integrate</span><b>→</b><span>Optimize</span>
+        <p>Built for productive, resilient farms.</p>
+      </div>
+    </section>
+
+    <section class="value-strip" aria-label="Core values">
+      <article><span>☀</span><div><h3>Energy</h3><p>Generate clean electricity from agricultural infrastructure.</p></div></article>
+      <article><span>✦</span><div><h3>Agriculture</h3><p>Optimize light, shade, and growing conditions.</p></div></article>
+      <article><span>⌁</span><div><h3>Intelligence</h3><p>Enable monitoring, automation, and data-driven farming.</p></div></article>
+    </section>
+
+    <section class="section problem" id="why">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Why SunCube</p>
+        <h2>Shade is essential.<br><em>It should also be productive.</em></h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-image reveal">
+          <img src="Introduction/SunCube-Introduction.jpeg" alt="Diagram of urban food, water and energy systems">
+          <p>Every square meter of agricultural surface can do more.</p>
+        </div>
+        <div class="problem-copy reveal">
+          <p class="large-copy">Farms already invest in shade to protect crops from heat and harsh sunlight. Traditional shade nets remain a passive cost, while conventional full-cover solar can deprive plants of the light they need.</p>
+          <p class="position-note"><strong>SunCube is not a solar panel manufacturer.</strong> We are the agrivoltaic architect and system integrator that finds the right balance between crop performance, energy generation, and farm conditions.</p>
+          <div class="comparison">
+            <div><span>Traditional shade</span><strong>Protection only</strong></div>
+            <div class="active"><span>SunCube system</span><strong>Protection + power + data</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section solutions" id="solutions">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Solutions</p>
+        <h2>From insight to intelligent infrastructure.</h2>
+        <p>We start with the farm, not the panel.</p>
+      </div>
+      <div class="solution-cards">
+        <article class="reveal">
+          <span class="number">01</span><div class="card-icon">⌖</div>
+          <h3>Agri-PV Design Intelligence</h3>
+          <p>Crop–light–energy simulation, site assessment, and an optimal PV arrangement tailored to each farm.</p>
+          <ul><li>Crop and climate analysis</li><li>PV layout optimization</li><li>Feasibility and yield modelling</li></ul>
+        </article>
+        <article class="featured reveal">
+          <span class="number">02</span><div class="card-icon">▧</div>
+          <h3>System Integration</h3>
+          <p>A complete agrivoltaic system integrating structures, solar, irrigation, sensors, and controls.</p>
+          <ul><li>New-build and retrofit</li><li>EPC partner delivery</li><li>Commissioning support</li></ul>
+        </article>
+        <article class="reveal">
+          <span class="number">03</span><div class="card-icon">⌁</div>
+          <h3>Farm Intelligence</h3>
+          <p>A progressive monitoring layer for understanding microclimate, energy, and operational performance after deployment.</p>
+          <ul><li>Microclimate monitoring</li><li>Energy performance</li><li>Automation roadmap</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section industries" id="applications">
+      <div class="section-heading reveal"><p class="eyebrow">Built for real farms</p><h2>One system. Multiple growing environments.</h2></div>
+      <div class="industry-grid">
+        <article class="industry greenhouse reveal"><span>01</span><h3>Greenhouse farms</h3><p>For high-value crops and energy-intensive controlled environments.</p></article>
+        <article class="industry nursery reveal"><span>02</span><h3>Ornamental nurseries</h3><p>For shade-sensitive plants where protection is already essential.</p></article>
+        <article class="industry rooftop reveal"><span>03</span><h3>Rooftop & community farms</h3><p>For productive urban surfaces that generate food and power.</p></article>
+      </div>
+    </section>
+
+    <section class="section technology" id="technology">
+      <div class="tech-copy reveal">
+        <p class="eyebrow">Our technology</p>
+        <h2>Finding the balance between sunlight and shade.</h2>
+        <p>SunCube Design Intelligence evaluates crop needs, local climate, and farm conditions to optimize PV layout, density, orientation, and height.</p>
+        <a class="text-link" href="#contact">Explore a feasibility study <span>→</span></a>
+      </div>
+      <div class="tech-diagram reveal">
+        <div class="input"><span>Crop</span><span>Climate</span><span>Farm</span></div>
+        <div class="cube"><i></i><b>SunCube<br>Design<br>Intelligence</b></div>
+        <div class="output"><span>Better growing conditions</span><span>Clean energy</span><span>Long-term intelligence</span></div>
+      </div>
+    </section>
+
+    <section class="section delivery" id="delivery" aria-labelledby="delivery-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">How we create value</p>
+        <h2 id="delivery-title">Design first. Deploy with partners. Optimize over time.</h2>
+        <p>SunCube starts with a paid feasibility and design engagement, then scales validated projects through trusted PV and agricultural infrastructure partners.</p>
+      </div>
+      <div class="delivery-grid">
+        <article class="reveal"><span>01</span><h3>Design</h3><p>Assess the site, model crop and climate needs, and define the right PV layout and microclimate strategy.</p><small>Current core</small></article>
+        <article class="reveal"><span>02</span><h3>Integrate</h3><p>Coordinate structures, solar components, irrigation, sensors, installation, and commissioning with delivery partners.</p><small>Deployment</small></article>
+        <article class="reveal"><span>03</span><h3>Optimize</h3><p>Add monitoring, operations insight, and energy optimization as the farm’s intelligent infrastructure matures.</p><small>Recurring services</small></article>
+      </div>
+    </section>
+
+    <section class="section project" id="projects">
+      <div class="project-copy reveal">
+        <p class="eyebrow light">Featured project</p>
+        <h2>From design intelligence to farm-scale validation.</h2>
+        <p>A signed paid pilot assessing optimized agrivoltaic design across an existing greenhouse and more than ten crop types.</p>
+        <small>Project details reflect the current pilot scope and are not generalized performance claims.</small>
+      </div>
+      <div class="project-metrics reveal">
+        <div><strong>3,060</strong><span>m² existing greenhouse</span></div>
+        <div><strong>10+</strong><span>crop types assessed</span></div>
+        <div><strong>Signed</strong><span>paid pilot validation</span></div>
+      </div>
+    </section>
+
+    <section class="section partners">
+      <p class="eyebrow">Validate with farms. Scale through partners.</p>
+      <div class="partner-list"><span>FARMS</span><span>PV EPC</span><span>GREENHOUSE BUILDERS</span><span>RESEARCH</span><span>AGRI-INFRASTRUCTURE</span></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-main reveal">
+        <p class="eyebrow">Start a project</p>
+        <h2>Ready to make your farm's shade productive?</h2>
+        <a class="button button-dark" href="mailto:yijun_lu@u.nus.edu">Talk to SunCube <span>↗</span></a>
+      </div>
+      <div class="contact-details">
+        <div><span>Email</span><a href="mailto:yijun_lu@u.nus.edu">yijun_lu@u.nus.edu</a></div>
+        <div><span>Based in</span><p>National University of Singapore<br>Singapore 117566</p></div>
+        <div><span>For</span><p>Farms · Investors · Partners</p></div>
+      </div>
+      <div class="contact-tagline reveal" aria-label="SunCube promise">
+        <p>Harvest both<br><span>crop</span> and <span>solar energy</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-directory">
+        <a class="footer-brand" href="#top" aria-label="SunCube home"><img src="Logo/LOGO-png3.png" alt="SunCube Systems"></a>
+        <div class="footer-columns">
+          <div class="footer-column">
+            <p>SunCube</p>
+            <a href="#why">Why SunCube</a>
+            <a href="#projects">Featured project</a>
+            <a href="#contact">Contact us</a>
+          </div>
+          <div class="footer-column">
+            <p>Systems</p>
+            <a href="#solutions">Design intelligence</a>
+            <a href="#solutions">System integration</a>
+            <a href="#delivery">Farm intelligence</a>
+          </div>
+          <div class="footer-column">
+            <p>Resources</p>
+            <a href="#technology">Agrivoltaics explained</a>
+            <a href="#delivery">Project planning guide</a>
+            <a href="#projects">Pilot &amp; research</a>
+            <a href="#contact">FAQ</a>
+            <button class="app-download" id="app-download-button" type="button" aria-haspopup="dialog">
+              <span class="app-mark">SC</span>
+              <span><strong>SunCube App</strong><small>Download · Coming soon</small></span>
+            </button>
+          </div>
+        </div>
+        <div class="footer-connect">
+          <h2>Built for <span>productive,</span><br><span>resilient farms.</span></h2>
+          <div class="footer-meta"><a href="mailto:yijun_lu@u.nus.edu">Email</a><span>Singapore</span><a href="#technology">Technology</a></div>
+        </div>
+      </div>
+
+      <aside class="footer-cta" aria-labelledby="footer-cta-title">
+        <p class="eyebrow">Start a conversation</p>
+        <h2 id="footer-cta-title">Plan a more productive farm.</h2>
+        <p>Tell us where you farm, what you grow, and how shade affects your operation. We’ll explore whether an agrivoltaic feasibility study is the right next step.</p>
+        <form class="footer-form" id="project-email-form">
+          <label class="sr-only" for="project-email">Your email address</label>
+          <input id="project-email" name="email" type="email" autocomplete="email" placeholder="your-email@example.com" required>
+          <button type="submit" aria-label="Start a project conversation">→</button>
+        </form>
+        <small>Submitting opens your email app.</small>
+      </aside>
+    </div>
+    <div class="footer-legal"><span>© 2026 SunCube Systems</span><span>Intelligent Agrivoltaic Systems</span></div>
+  </footer>
+  <dialog class="app-dialog" id="app-dialog" aria-labelledby="app-dialog-title">
+    <button class="app-dialog-close" type="button" aria-label="Close">×</button>
+    <span class="app-dialog-mark">SC</span>
+    <p class="eyebrow">SunCube App</p>
+    <h2 id="app-dialog-title">Coming soon.</h2>
+    <p>Farm monitoring, energy insights, and intelligent operations are part of the SunCube roadmap.</p>
+    <a href="mailto:yijun_lu@u.nus.edu?subject=SunCube%20App%20updates">Ask about product updates <span>→</span></a>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
