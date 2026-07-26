@@ -2,8 +2,16 @@ const header = document.querySelector(".site-header");
 const reveals = document.querySelectorAll(".reveal");
 const menuButton = document.querySelector(".menu-button");
 const mobileNav = document.querySelector(".mobile-nav");
+const navGroup = document.querySelector(".nav-group");
+const navGroupToggle = document.querySelector(".nav-group-toggle");
+
+const closeNavGroup = () => {
+  navGroup.classList.remove("open");
+  navGroupToggle.setAttribute("aria-expanded", "false");
+};
 
 const closeMenu = () => {
+  closeNavGroup();
   menuButton.setAttribute("aria-expanded", "false");
   menuButton.setAttribute("aria-label", "Open menu");
   mobileNav.classList.remove("open");
@@ -18,8 +26,19 @@ menuButton.addEventListener("click", () => {
   document.body.classList.toggle("menu-open", !isOpen);
 });
 
+navGroupToggle.addEventListener("click", () => {
+  const isOpen = navGroupToggle.getAttribute("aria-expanded") === "true";
+  navGroup.classList.toggle("open", !isOpen);
+  navGroupToggle.setAttribute("aria-expanded", String(!isOpen));
+});
+
 mobileNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-document.addEventListener("keydown", (event) => event.key === "Escape" && closeMenu());
+document.addEventListener("click", (event) => {
+  if (!navGroup.contains(event.target)) closeNavGroup();
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMenu();
+});
 
 const projectEmailForm = document.querySelector("#project-email-form");
 projectEmailForm.addEventListener("submit", (event) => {

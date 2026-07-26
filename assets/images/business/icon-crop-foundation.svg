@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Crop-first foundation</title>
+  <desc id="desc">A young plant representing crop health, light management and resilient growth.</desc>
+  <circle cx="80" cy="80" r="75" fill="#f5f5ed" stroke="#ffd93d" stroke-width="4"/>
+  <circle cx="80" cy="80" r="13" fill="#f2b600"/>
+  <path d="M80 86v43" fill="none" stroke="#164f38" stroke-width="7" stroke-linecap="round"/>
+  <path d="M80 91C52 90 38 76 38 50c27 0 42 14 42 41Z" fill="#ffd93d" stroke="#f2b600" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M80 91c28-1 42-15 42-41-27 0-42 14-42 41Z" fill="#bfda49" stroke="#83a527" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M80 74c-2-22 7-38 27-47 8 22 0 39-27 47Z" fill="#f6bf16" stroke="#f2a900" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M44 131h72" fill="none" stroke="#164f38" stroke-width="7" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Solar-crop infrastructure</title>
+  <desc id="desc">Sun, photovoltaic panels and crops representing integrated agrivoltaics.</desc>
+  <circle cx="80" cy="80" r="75" fill="#f5f5ed" stroke="#ffd93d" stroke-width="4"/>
+  <circle cx="80" cy="42" r="14" fill="none" stroke="#f2b600" stroke-width="6"/>
+  <g stroke="#f2b600" stroke-width="5" stroke-linecap="round">
+    <path d="M80 15v10M54 24l7 8M106 24l-7 8M45 43h11M104 43h11"/>
+  </g>
+  <path d="M44 61h78l-11 44H33z" fill="#164f38" stroke="#10261f" stroke-width="4" stroke-linejoin="round"/>
+  <g stroke="#d9edf1" stroke-width="3">
+    <path d="M63 61l-8 44M88 61l-3 44M111 61l-8 44M38 82h78"/>
+  </g>
+  <g fill="none" stroke="#164f38" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 114v23M102 114v23M80 108v31"/>
+    <path d="M58 130c-10 0-15-6-16-13 10-1 16 3 16 13ZM58 130c10 0 15-6 16-13-10-1-16 3-16 13Z"/>
+    <path d="M102 130c-10 0-15-6-16-13 10-1 16 3 16 13ZM102 130c10 0 15-6 16-13-10-1-16 3-16 13Z"/>
+  </g>
+</svg>
