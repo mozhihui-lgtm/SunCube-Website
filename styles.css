@@ -93,3 +93,9 @@ html{scroll-padding-top:85px}body.menu-open{overflow:hidden}.brand img{height:34
   .business-foundation{align-items:flex-start;padding:22px 20px}
   .business-foundation img{width:55px;height:55px}
 }
+
+.problem-image .why-suncube-image {
+  object-fit: contain;
+  filter: none;
+  background: #fff;
+}
