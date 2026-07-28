@@ -95,7 +95,8 @@ html{scroll-padding-top:85px}body.menu-open{overflow:hidden}.brand img{height:34
 }
 
 .problem-image .why-suncube-image {
+  height: auto;
   object-fit: contain;
   filter: none;
-  background: #fff;
+  background: transparent;
 }
