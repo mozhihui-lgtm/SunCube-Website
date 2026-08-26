@@ -100,3 +100,9 @@ html{scroll-padding-top:85px}body.menu-open{overflow:hidden}.brand img{height:34
   filter: none;
   background: transparent;
 }
+
+/* Keep the gardening director directly below Jonald in the two-column team layout. */
+.team-member-gardening { grid-column: 2; }
+@media (max-width: 900px) {
+  .team-member-gardening { grid-column: auto; }
+}

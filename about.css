@@ -103,14 +103,15 @@ h1, h2 { font-family: "Manrope", sans-serif; }
   overflow: hidden;
   border-radius: 95px;
   box-shadow: none;
+  isolation: isolate;
 }
 .team-collage-card::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 0;
   pointer-events: none;
-  background: rgba(0, 0, 0, .20);
+  background: rgba(0, 0, 0, .05);
 }
 .team-collage-card:nth-child(2),
 .team-collage-card:nth-child(4) { transform: translateY(22px); }
@@ -124,8 +125,9 @@ h1, h2 { font-family: "Manrope", sans-serif; }
   object-fit: contain;
   object-position: center bottom;
   position: relative;
-  z-index: 1;
-  filter: drop-shadow(0 10px 14px rgba(8, 35, 26, .14));
+  z-index: 2;
+  mix-blend-mode: normal;
+  filter: brightness(1.08) contrast(1.04) saturate(1.03);
 }
 .card-green { background: #164f38; }
 .card-lime { background: #bfda49; }
@@ -247,12 +249,66 @@ h1, h2 { font-family: "Manrope", sans-serif; }
   border: 1px solid var(--line);
 }
 .about-person-founder { grid-column: 1 / -1; min-height: 260px; grid-template-columns: 150px 1fr; }
+.about-person-gardening { grid-column: 2; }
 .about-person img {
   width: 135px;
   height: 135px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 25%;
+}
+.about-person-placeholder {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  background: var(--lime);
+  color: var(--ink);
+  font: 800 34px "Manrope", sans-serif;
+  letter-spacing: -.05em;
+}
+.about-person-photo {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  justify-self: center;
+}
+.about-person-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center 25%;
+}
+.about-person .about-person-photo-bio {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: rgba(16, 38, 31, .92);
+  color: white;
+  font: 600 10px/1.45 "DM Sans", sans-serif;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .25s ease, transform .25s ease;
+  pointer-events: none;
+}
+.about-person-photo:hover .about-person-photo-bio,
+.about-person-photo:focus .about-person-photo-bio,
+.about-person-photo:focus-within .about-person-photo-bio {
+  opacity: 1;
+  transform: none;
+}
+.about-person-photo:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 3px;
 }
 .about-photo-crop {
   display: block;
@@ -271,6 +327,7 @@ h1, h2 { font-family: "Manrope", sans-serif; }
   transform-origin: 50% 25%;
 }
 .about-person-founder img { width: 135px; height: 135px; justify-self: center; }
+.about-person-founder .about-person-photo img { width: 100%; height: 100%; }
 .about-person p,
 .about-advisor p {
   margin-bottom: 15px;
@@ -326,10 +383,10 @@ h1, h2 { font-family: "Manrope", sans-serif; }
 .about-partner-grid img { width: 100%; height: 130px; object-fit: contain; }
 .about-partner-grid span { padding-top: 20px; border-top: 1px solid var(--line); color: #64726c; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
 
-/* All five core members share one row on wide displays. */
+/* All core members share one row on wide displays. */
 @media (min-width: 1450px) {
   .about-core-grid {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 14px;
   }
   .about-person,
@@ -344,15 +401,18 @@ h1, h2 { font-family: "Manrope", sans-serif; }
     gap: 27px;
     text-align: center;
   }
+  .about-person-gardening { grid-column: auto; }
   .about-person > img,
   .about-person-founder > img,
-  .about-photo-crop {
+  .about-photo-crop,
+  .about-person-photo,
+  .about-person-placeholder {
     flex: 0 0 auto;
     width: 168px;
     height: 168px;
     margin: 0 auto;
   }
-  .about-person > div {
+  .about-person > div:not(.about-person-placeholder):not(.about-person-photo) {
     width: 100%;
   }
   .about-person h3,
@@ -431,9 +491,12 @@ h1, h2 { font-family: "Manrope", sans-serif; }
   .about-partnership { padding: 75px 5vw; }
   .about-person,
   .about-person-founder { grid-template-columns: 1fr; text-align: center; }
+  .about-person-gardening { grid-column: auto; }
   .about-person img,
   .about-person-founder img,
-  .about-photo-crop { justify-self: center; }
+  .about-photo-crop,
+  .about-person-photo,
+  .about-person-placeholder { justify-self: center; }
   .about-advisor-grid,
   .about-partner-grid { grid-template-columns: 1fr; }
   .about-support { margin-top: 65px; }
