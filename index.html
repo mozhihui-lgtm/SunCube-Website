@@ -3,8 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SunCube transforms agricultural shading into productive energy and climate infrastructure through integrated solar, climate, and crop optimization.">
-  <title>SunCube Systems | Intelligent Agrivoltaic Systems</title>
+  <meta name="description" content="SunCube designs intelligent agrivoltaic solutions that help farms optimize crop performance, generate clean energy, and build climate-responsive infrastructure.">
+  <title>SunCube — Intelligent Agrivoltaic Solutions</title>
+  <link rel="canonical" href="https://suncube.systems/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SunCube">
+  <meta property="og:title" content="SunCube — Intelligent Agrivoltaic Solutions">
+  <meta property="og:description" content="Intelligent agrivoltaic solutions designed around crops, climate, and farm operations.">
+  <meta property="og:url" content="https://suncube.systems/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SunCube — Intelligent Agrivoltaic Solutions">
+  <meta name="twitter:description" content="Intelligent agrivoltaic solutions designed around crops, climate, and farm operations.">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "SunCube",
+      "alternateName": "SunCube Systems",
+      "url": "https://suncube.systems/"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SunCube Systems",
+      "url": "https://suncube.systems/",
+      "logo": "https://suncube.systems/Logo/LOGO-png3.png",
+      "description": "SunCube designs intelligent agrivoltaic solutions around crops, climate, and farm operations.",
+      "email": "yijun_lu@u.nus.edu",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "40 West Coast Ferry Road, Plot A1",
+        "addressLocality": "Singapore",
+        "postalCode": "129630",
+        "addressCountry": "SG"
+      }
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -84,7 +120,16 @@
       <a href="#why">Why SunCube</a>
       <a href="#solutions">Solutions</a>
       <a href="#technology">Technology</a>
-      <a href="#projects">Projects</a>
+      <div class="nav-group">
+        <button class="nav-group-toggle" type="button" aria-expanded="false" aria-controls="projects-menu">
+          Projects <span aria-hidden="true">⌄</span>
+        </button>
+        <div class="nav-submenu" id="projects-menu">
+          <a href="#projects" data-project-link="land">Land</a>
+          <a href="#projects" data-project-link="greenhouse">Greenhouse</a>
+          <a href="#projects" data-project-link="hydroponic">Hydroponic</a>
+        </div>
+      </div>
       <div class="nav-group">
         <button class="nav-group-toggle" type="button" aria-expanded="false" aria-controls="who-we-are-menu">
           Who We Are <span aria-hidden="true">⌄</span>
@@ -271,17 +316,69 @@
       </div>
     </section>
 
-    <section class="section project" id="projects">
-      <div class="project-copy reveal">
-        <p class="eyebrow light">Featured project</p>
-        <h2>From design intelligence to farm-scale validation.</h2>
-        <p>A signed paid pilot assessing optimized agrivoltaic design across an existing greenhouse and more than ten crop types.</p>
-        <small>Project details reflect the current pilot scope and are not generalized performance claims.</small>
+    <section class="section project-library" id="projects" aria-labelledby="projects-title">
+      <div class="project-library-heading reveal">
+        <p class="eyebrow">Projects by application</p>
+        <h2 id="projects-title">Explore our work across growing environments.</h2>
+        <p>Select an application to view SunCube projects, pilots and validation work within that environment.</p>
       </div>
-      <div class="project-metrics reveal">
-        <div><strong>3,060</strong><span>m² existing greenhouse</span></div>
-        <div><strong>10+</strong><span>crop types assessed</span></div>
-        <div><strong>Signed</strong><span>paid pilot validation</span></div>
+
+      <div class="project-categories" role="tablist" aria-label="Project application types">
+        <button class="project-category reveal" type="button" role="tab" id="project-tab-land" aria-controls="project-panel-land" aria-selected="false" data-project-category="land">
+          <img src="assets/images/business/solar-crop-infrastructure-v1.webp" alt="Solar shading structures over open-field crops" loading="lazy">
+          <span class="project-category-index">01</span>
+          <span class="project-category-name">Land</span>
+          <span class="project-category-action">View projects <b aria-hidden="true">↗</b></span>
+        </button>
+        <button class="project-category reveal is-active" type="button" role="tab" id="project-tab-greenhouse" aria-controls="project-panel-greenhouse" aria-selected="true" data-project-category="greenhouse">
+          <img src="assets/images/hero/hero.png" alt="SunCube agrivoltaic greenhouse application" loading="lazy">
+          <span class="project-category-index">02</span>
+          <span class="project-category-name">Greenhouse</span>
+          <span class="project-category-action">View projects <b aria-hidden="true">↗</b></span>
+        </button>
+        <button class="project-category reveal" type="button" role="tab" id="project-tab-hydroponic" aria-controls="project-panel-hydroponic" aria-selected="false" data-project-category="hydroponic">
+          <img src="assets/images/greenhouse-farm.png" alt="Hydroponic crops growing beneath integrated solar panels" loading="lazy">
+          <span class="project-category-index">03</span>
+          <span class="project-category-name">Hydroponic</span>
+          <span class="project-category-action">View projects <b aria-hidden="true">↗</b></span>
+        </button>
+      </div>
+
+      <div class="project-results">
+        <section class="project-panel" id="project-panel-land" role="tabpanel" aria-labelledby="project-tab-land" hidden>
+          <div class="project-empty">
+            <p class="eyebrow">Land projects</p>
+            <h3>Land-based project portfolio in preparation.</h3>
+            <p>Validated open-field and land-based project details will be added here as they are approved for public release.</p>
+            <a class="text-link" href="project.html">Discuss a land project <span>→</span></a>
+          </div>
+        </section>
+
+        <section class="project-panel is-active" id="project-panel-greenhouse" role="tabpanel" aria-labelledby="project-tab-greenhouse">
+          <article class="project-case">
+            <div class="project-case-copy">
+              <p class="eyebrow light">Greenhouse · Paid pilot</p>
+              <h3>From design intelligence to farm-scale validation.</h3>
+              <p>A signed paid pilot assessing optimized agrivoltaic design across an existing greenhouse and more than ten crop types.</p>
+              <small>Project details reflect the current pilot scope and are not generalized performance claims.</small>
+              <a class="project-case-link" href="project.html">Explore our project process <span>→</span></a>
+            </div>
+            <div class="project-case-metrics">
+              <div><strong>3,060</strong><span>m² existing greenhouse</span></div>
+              <div><strong>10+</strong><span>crop types assessed</span></div>
+              <div><strong>Signed</strong><span>paid pilot validation</span></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="project-panel" id="project-panel-hydroponic" role="tabpanel" aria-labelledby="project-tab-hydroponic" hidden>
+          <div class="project-empty">
+            <p class="eyebrow">Hydroponic projects</p>
+            <h3>Hydroponic project portfolio in preparation.</h3>
+            <p>Hydroponic integration projects and validated results will be added here after project information is cleared for publication.</p>
+            <a class="text-link" href="project.html">Discuss a hydroponic project <span>→</span></a>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -403,7 +500,18 @@
       </div>
       <div class="contact-details">
         <div><span>Email</span><a href="mailto:yijun_lu@u.nus.edu">yijun_lu@u.nus.edu</a></div>
-        <div><span>Based in</span><p>National University of Singapore<br>Singapore 117566</p></div>
+        <div><span>Based in</span><p>40 West Coast Ferry Road, Plot A1<br>Singapore 129630</p></div>
+        <div class="contact-map">
+          <span>Find us</span>
+          <iframe
+            title="Find SunCube at 40 West Coast Ferry Road, Singapore"
+            src="https://www.google.com/maps?q=40%20West%20Coast%20Ferry%20Road%2C%20Plot%20A1%2C%20Singapore%20129630&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=40%20West%20Coast%20Ferry%20Road%2C%20Plot%20A1%2C%20Singapore%20129630" target="_blank" rel="noopener">Open in Google Maps <span aria-hidden="true">↗</span></a>
+        </div>
         <div><span>For</span><p>Farms · Investors · Partners</p></div>
       </div>
       <div class="contact-tagline reveal" aria-label="SunCube promise">
@@ -470,6 +578,6 @@
     <p>Farm monitoring, energy insights, and intelligent operations are part of the SunCube roadmap.</p>
     <a href="mailto:yijun_lu@u.nus.edu?subject=SunCube%20App%20updates">Ask about product updates <span>→</span></a>
   </dialog>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260908-project-menu"></script>
 </body>
 </html>
